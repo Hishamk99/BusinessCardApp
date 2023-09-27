@@ -13,12 +13,13 @@ class BusinessCardApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color(0xff324E6B),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
               backgroundColor: Colors.white,
-              radius: 122,
+              radius: 112,
               child: CircleAvatar(
-                radius: 120,
+                radius: 110,
                 backgroundImage: AssetImage('assets/images/birth.png'),
               ),
             ),
@@ -37,8 +38,15 @@ class BusinessCardApp extends StatelessWidget {
                   color: Color(0xff6c8090),
                   fontWeight: FontWeight.bold),
             ),
+            const Divider(
+              color: Color(0xff6c8090),
+              thickness: 1,
+              indent: 60,
+              endIndent: 60,
+              height: 10,
+            ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
@@ -54,16 +62,19 @@ class BusinessCardApp extends StatelessWidget {
                         color: Color(0xff324E6B),
                       ),
                     ),
-                    Text(
-                      '(+20)1010861564',
-                      style: TextStyle(fontSize: 24),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Text(
+                        '(+20)1010861564',
+                        style: TextStyle(fontSize: 24),
+                      ),
                     ),
                   ],
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16 ,vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
               child: Container(
                 height: 65,
                 decoration: BoxDecoration(
@@ -79,9 +90,12 @@ class BusinessCardApp extends StatelessWidget {
                         color: Color(0xff324E6B),
                       ),
                     ),
-                    Text(
-                      'hisham370@gmail.com',
-                      style: TextStyle(fontSize: 24),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Text(
+                        'hisham370@gmail.com',
+                        style: TextStyle(fontSize: 24),
+                      ),
                     )
                   ],
                 ),
