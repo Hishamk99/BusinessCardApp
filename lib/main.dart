@@ -11,7 +11,7 @@ class BusinessCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        backgroundColor: const Color(0xff324E6B),
+        backgroundColor: Color(0xff324E6B),
         body: Column(
           children: [
             CircleAvatar(
@@ -20,6 +20,14 @@ class BusinessCardApp extends StatelessWidget {
               child: CircleAvatar(
                 radius: 120,
                 backgroundImage: AssetImage('assets/images/birth.png'),
+              ),
+            ),
+            Text(
+              'Hisham Kamel',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 30,
+                color: Colors.white,
               ),
             )
           ],
